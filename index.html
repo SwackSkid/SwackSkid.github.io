@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwackSkid</title>
+  <style>
+    /* Reset and font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #121212; /* Dark background */
+      color: #f0f0f0;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 50px;
+      gap: 30px;
+      background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #f0f0f0;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      font-size: 5rem; /* wider and bigger */
+      font-weight: 900;
+      letter-spacing: 8px;
+      color: #ffffff;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery a img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+      cursor: pointer;
+      filter: brightness(0.95);
+    }
+
+    .gallery a img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      filter: brightness(1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: #bbbbbb;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn.ice.bio/content/profiles/profile_avataraRtHGGB-ZLIUyIgAAeIfP_cropped.jpg" alt="Logo">
+    <h1>SwackSkid</h1>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <!-- Add your custom image URLs here, wrapped in <a> -->
+      <a href="https://swackskid.github.io/ice/" target="_blank">
+        <img src="https://via.placeholder.com/400x300.png?text=Photo+1" alt="Photo 1">
+      </a>
+      <a href="https://swackskid.github.io/ice/" target="_blank">
+        <img src="https://via.placeholder.com/400x300.png?text=Photo+2" alt="Photo 2">
+      </a>
+      <a href="https://swackskid.github.io/ice/" target="_blank">
+        <img src="https://via.placeholder.com/400x300.png?text=Photo+3" alt="Photo 3">
+      </a>
+      <a href="https://swackskid.github.io/ice/" target="_blank">
+        <img src="https://via.placeholder.com/400x300.png?text=Photo+4" alt="Photo 4">
+      </a>
+      <a href="https://swackskid.github.io/ice/" target="_blank">
+        <img src="https://via.placeholder.com/400x300.png?text=Photo+5" alt="Photo 5">
+      </a>
+      <a href="https://swackskid.github.io/ice/" target="_blank">
+        <img src="https://via.placeholder.com/400x300.png?text=Photo+6" alt="Photo 6">
+      </a>
+    </div>
+  </main>
+
+  <footer>© 2026 SwackSkid</footer>
+
+</body>
+</html>
